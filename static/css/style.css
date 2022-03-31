@@ -1,0 +1,150 @@
+/*
+Common
+***********************/
+html, body{
+    height: 100;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-header{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+.main-header img{
+    width: 50px;
+}
+.main-header h1{
+    margin-left: 12px;
+    font-size: 20px;
+    line-height: 9px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.container {
+    max-width: 600px;
+    height: 100;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+}
+/* .tweet-post{
+    display: flex;
+    padding: 10px;
+} */
+/*
+Post
+***********************/
+.tweet-post{
+    display: flex;
+    justify-content: space-around;
+
+}
+.my-icon img{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 10%;
+    padding: 5px 10px ;
+}
+
+.post_form{
+   
+    border-bottom: 1px solid #ccc;
+
+}
+input#tweet {
+    width: 20%;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input#file {
+    background-color: white;
+    width: 50%;
+}
+.posts li .menu_icon {
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    
+}
+.posts li .menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.post li .menu a {
+    text-decoration: none;
+}
+.post_form input {
+    border: 0px;
+    width: 90%;
+    background: #e6fef7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 4%;
+    font-size: 15px;
+    
+}
+.post_form textarea{
+    border: 0px;
+    padding: 10px;
+    width: 80%;
+    height: 100px;
+    resize: none;
+    margin-left: 4%;
+    font-size: 17px;
+}
+.posts ul{
+    padding: 0;
+}
+.posts li {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 17px;
+    list-style: none;
+}
+
+.posts li .logo{
+    flex-basis: 15%;
+}
+.posts li .logo img{
+    width: 60%;
+}
+.posts li .name_body{
+    color: rgb(21, 32, 43);
+    font-family: inherit;
+}
+.posts li .name_body.name{
+    color: rgb(21, 32, 43);
+    font-size: 17px;
+    font-weight: bold;
+}
+.posts li .name_body .datetime{
+    padding-left: 10px;
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name{
+        font-size: 20px;
+    }
+}
